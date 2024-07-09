@@ -1,4 +1,3 @@
 package com.example.cateeringapp.HomeScreen
 
-class Hotel Data Class {
-}
+data class Hotel(val id :Int ,val name: String, val distance: String, val imageRes: Int)

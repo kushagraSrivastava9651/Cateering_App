@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
+import com.example.cateeringapp.HomeScreen.HomeScreen
 import com.example.cateeringapp.Navigation.NavigationGraph
 import com.example.cateeringapp.ViewModel.AuthViewModel
 import com.example.cateeringapp.ui.theme.CateeringAppTheme
@@ -29,10 +30,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavigationGraph(authViewModel = authViewModel,navController = navController)
+                  NavigationGraph(authViewModel=authViewModel,navController = navController)
                 }
             }
         }
     }
 }
+
+
 
